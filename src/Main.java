@@ -105,7 +105,7 @@ public class Main {
             }
             if (opcion == 1) {
 
-                System.out.println( nombrearanha + "TE COMIO UN PAJARO...");
+                System.out.println( nombrearanha + " TE COMIO UN PAJARO...");
                 System.out.println(" ============================ U LOSE ==========================");
 
 
