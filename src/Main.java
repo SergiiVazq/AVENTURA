@@ -8,6 +8,7 @@ public class Main {
         String nombrearanha = "";
         int opcion;
         int vida = 100;
+        int distancia;
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.println("==========================================================");
@@ -16,7 +17,7 @@ public class Main {
         nombrearanha = input.nextLine();
 
         System.out.println("\n==========================================================");
-        System.out.println( nombrearanha + " comienza la aventura empiezas con 100 de vida intenta sobrevivir en el liceo");
+        System.out.println(nombrearanha + " comienza la aventura empiezas con 100 de vida intenta sobrevivir en el liceo");
         System.out.println("\nSITUACION 1:");
         System.out.println("Pulsa 1 si decides entrar a la clase de DAM por la ventana");
         System.out.println("Pulsa 2 si decides entrar a la clase de DAM por los conductos de ventilacion\n");
@@ -28,12 +29,12 @@ public class Main {
             } while (opcion != 1 && opcion != 2);
         }
         if (opcion == 1) {
-            System.out.println( nombrearanha + " Entraste sin complicaciones a la clase bien hecho...");
+            System.out.println(nombrearanha + " Entraste sin complicaciones a la clase bien hecho...");
             System.out.println("VIDA ACTUAL: " + vida + " ===================");
 
         } else if (opcion == 2) {
             vida -= 25;
-            System.out.println( nombrearanha + "Los conductos estaban muy calientes debido al calor y sufriste daño...");
+            System.out.println(nombrearanha + "Los conductos estaban muy calientes debido al calor y sufriste daño...");
             System.out.println("VIDA ACTUAL: " + vida + " ===================");
         }
 
@@ -52,7 +53,7 @@ public class Main {
             System.out.println("Tu telaraña no es muy fuerte y sufres una gran caida...");
             System.out.println("VIDA ACTUAL: " + vida + " ===================\n");
 
-            System.out.println( nombrearanha + "QUE QUIERES HACER AHORA?");
+            System.out.println(nombrearanha + "QUE QUIERES HACER AHORA?");
             System.out.println("Pulsa 1 si decides volver a intentarlo ya que todos en la clase se rieron de ti...");
             System.out.println("Pulsa 2 si decides continuar a la siguiente habitacion\n");
             opcion = input.nextInt();
@@ -64,7 +65,7 @@ public class Main {
             }
             if (opcion == 1) {
                 vida -= 25;
-                System.out.println( nombrearanha + " TE VOLVISTE A CAER DE NUEVO!!! QUE VERGUENZA, SIMPLEMENTE AVANZAS A LA SIGUIENTE HABITACIÓN...");
+                System.out.println(nombrearanha + " TE VOLVISTE A CAER DE NUEVO!!! QUE VERGUENZA, SIMPLEMENTE AVANZAS A LA SIGUIENTE HABITACIÓN...");
                 System.out.println("VIDA ACTUAL: " + vida + " ===================\n");
 
             } else if (opcion == 2) {
@@ -105,7 +106,7 @@ public class Main {
             }
             if (opcion == 1) {
 
-                System.out.println( nombrearanha + " TE COMIO UN PAJARO...");
+                System.out.println(nombrearanha + " TE COMIO UN PAJARO...");
                 System.out.println(" ============================ U LOSE ==========================");
 
 
@@ -114,7 +115,6 @@ public class Main {
                 System.out.println(" ============================ U WIN ==========================");
                 System.out.println("Felicidades sobreviviste con " + vida + " de vida...");
             }
-
 
 
         } else if (opcion == 2) {
